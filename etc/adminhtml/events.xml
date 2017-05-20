@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="adminhtml_block_html_before">
+		<observer instance="MagentoHackathon\ProductAttributeAcl\Observer\Adminhtml\BlockHtmlBefore" name="magentohackathon_productattributeacl_observer_adminhtml_blockhtmlbefore_adminhtml_block_html_before"/>
+	</event>
+	<event name="permissions_role_html_before">
+		<observer instance="MagentoHackathon\ProductAttributeAcl\Observer\Permissions\RoleHtmlBefore" name="magentohackathon_productattributeacl_observer_permissions_rolehtmlbefore_permissions_role_html_before"/>
+	</event>
+	<event name="admin_permissions_role_prepare_save">
+		<observer instance="MagentoHackathon\ProductAttributeAcl\Observer\Admin\PermissionsRolePrepareSave" name="magentohackathon_productattributeacl_observer_admin_permissionsrolepreparesave_admin_permissions_role_prepare_save"/>
+	</event>
+</config>

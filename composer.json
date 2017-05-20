@@ -1,0 +1,21 @@
+{
+    "name": "magentohackathon/module-productattributeacl",
+    "description": "Manage product attribute permissions.",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MagentoHackathon\\ProductAttributeAcl\\": ""
+        }
+    }
+}

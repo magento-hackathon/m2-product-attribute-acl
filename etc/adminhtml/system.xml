@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="catalog" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>catalog</label>
+			<tab>catalog</tab>
+			<resource>MagentoHackathon_ProductAttributeAcl::config_magentohackathon_productattributeacl</resource>
+			<group id="product_attribute_acl" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="100" translate="label">
+				<label>Product Attribute ACL</label>
+				<field id="enabled" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+					<label>Enabled</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="default_settings" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="select">
+					<label>Default Setting</label>
+					<comment>Make attributes editable by default in product edit mask.</comment>
+					<source_model>MagentoHackathon\ProductAttributeAcl\Model\Config\Source\DefaultSettings</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
